@@ -1,0 +1,61 @@
+compatibility migration passed; bytes before/after: 188416 188416
+preserved counts: {'sales': 0, 'purchases': 0, 'maintenance': 0, 'expenses': 0, 'transfers': 0, 'customer_debts': 2, 'supplier_debts': 2}
+test_db_compatibility.py STATUS=0
+Database Schema Test: PASSED
+Arabic Logic Test: Input 'ترند سنتر الأردن' -> Output processed successfully
+test_logic.py STATUS=0
+V132 accounting smoke tests passed: 5 balanced entries
+test_v132_accounting.py STATUS=0
+V133 theme assets passed: 9 brand logos
+test_v133_theme_assets.py STATUS=0
+V135 UX checks passed: syntax, contrast tokens, RTL notes, search, WhatsApp messages, and signature removal.
+test_v135_ux.py STATUS=0
+V139 build checks passed: requirements, syntax, workflow paths, optional brand assets, V139 artifact name, and obsolete asset removal.
+test_v136_build.py STATUS=0
+V138 checks passed: stable source links, AP-only supplier balance, sale COGS recalc, expense repost, returns/waste path, and intake contract/WhatsApp action.
+test_v138_accounting.py STATUS=0
+V139 regression checks passed: AP-only purchase deletion, V139 versioning, and BANK/CLIQ display safeguards.
+test_v139_regression.py STATUS=0
+V141 login/report checks passed: current-month revenue streams, read-only query path, white values, and enlarged net profit typography.
+test_v141_login_reports.py STATUS=0
+V142 targeted UI assertions passed.
+test_v142_targeted_ui.py STATUS=0
+V143 WhatsApp/dashboard assertions passed.
+test_v143_whatsapp_dashboard.py STATUS=0
+V144 device register assertions passed.
+test_v144_device_register.py STATUS=0
+V145 WhatsApp mixed-text and PNG contract checks passed.
+test_v145_whatsapp_png.py STATUS=0
+V146 global dialog RTL checks passed.
+test_v146_dialog_rtl.py STATUS=0
+V147 cash reconciliation checks passed: duplicate journal rows no longer duplicate displayed operational balances; BANK/CLIQ remains non-additive.
+TEMP_DB=/tmp/tcj_v147_cash_xc1ey026/cash.db
+test_v147_cash_reconciliation.py STATUS=0
+V148 RTL idempotence checks passed for customer registration and WhatsApp mixed text.
+test_v148_rtl_idempotence.py STATUS=0
+V151 accounting guard tests passed: cumulative sales returns, bounded purchase returns, normalized AP supplier identity, and supplier balance payment sync
+test_v151_accounting_fixes.py STATUS=0
+V154 inventory adjustment checks passed: waste, cumulative sales returns, original-funding purchase returns, supplier/AP sync, and liquidity display coverage
+test_v154_inventory_adjustment.py STATUS=0
+V157 purchase report check passed: gross purchases 10, returns 5, net purchases 5
+test_v157_purchase_report.py STATUS=0
+V159 manager navigation passed: reordered manager UI keeps original callbacks and no duplicates
+test_v159_manager_navigation.py STATUS=0
+V161 UI navigation and intake RTL checks passed
+test_v161_ui_navigation.py STATUS=0
+V162 live dashboard checks passed
+test_v162_live_dashboard.py STATUS=0
+V163 report date filter passed: existing WHERE receives AND date predicates
+test_v163_report_filter.py STATUS=0
+V164 report field order passed: من right, إلى left
+test_v164_report_order.py STATUS=0
+V165 sponsor font controls passed: persisted size, +/- controls, sponsor paths preserved
+test_v165_sponsor_font.py STATUS=0
+V166 invoice current points passed: invoice display and sponsor paths preserved
+test_v166_invoice_current_points.py STATUS=0
+V168 UI font passed: Cocon family is used by interface constants without Arial override
+test_v168_font_ui.py STATUS=0
+V171 discount limit checks passed: 70% display, target-margin guard, and minimum threshold
+test_v171_discount_limit.py STATUS=0
+py_compile STATUS=0
+OVERALL_EXIT_CODE=0
